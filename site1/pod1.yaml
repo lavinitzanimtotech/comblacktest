@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sitepod1
+  labels:
+    app: web
+    site: 32003
+    podbysite: 1
+spec:
+  containers:
+  - name: web32003
+    image: nginx
+    ports:
+      - containerPort: 32003
